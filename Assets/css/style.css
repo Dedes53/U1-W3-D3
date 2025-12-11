@@ -33,7 +33,13 @@ header h1 {
 
 #listContainer {
   background-color: wheat;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+#listName {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
