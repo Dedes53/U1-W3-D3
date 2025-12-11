@@ -13,17 +13,23 @@
     </header>
 
     <main>
-      <section>
-        <ul>
-          <button id="newList">Crea una nuova lista</button>
-        </ul>
+      <section id="newList">
+        <form action="">
+          <fieldset>
+            <legend>Nuova Lista</legend>
+            <label for="listName">Nome della lista:</label>
+            <input type="text" id="listName" name="listName" />
+            <input type="submit" value="Crea lista" />
+          </fieldset>
+        </form>
       </section>
 
       <section>
         <ul id="todoList">
           <!-- da aggiungere:
                       - input text e relativo submit per aggiungere nuovo elemento 
-                      - bottone per eliminare la lista -->
+                      - bottone per eliminare la lista 
+                      - dare uno sfondo di colore casuale alle liste-->
           <!-- Todo items will be added here dynamically -->
         </ul>
       </section>
