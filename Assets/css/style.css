@@ -23,3 +23,17 @@ header {
 header h1 {
   font-size: 3rem;
 }
+
+#newList {
+  background-color: wheat;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#listContainer {
+  background-color: wheat;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
