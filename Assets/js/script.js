@@ -1,8 +1,17 @@
-const listContainer = document.getElementById("listContainer");
-const todoList = document.getElementById("todoList");
-const newElementInput = document.getElementById("newElement");
-const addElementButton = document.getElementsById("addElement")[0];
+const listContainer = document.getElementById("listContainer"); //section contenente la lista
+const newElementInput = document.getElementById("newElement"); //input per nuovo elemento
+const addElementButton = document.getElementById("addElement"); //bottone per aggiungere elemento
+const todoList = document.getElementById("todoList"); //lista
 
-addElementButton.addEventListener("click", function() => addElementButton(value) {
+addElementButton.addEventListener("click", () => {
+  const newElementText = newElementInput.value.trim();
+  const li = document.createElement("li");
 
-})
+  if (newElementText !== "") {
+    li.textContent = newElementText;
+    todoList.appendChild(li);
+    newElementInput.value = "";
+  } else {
+    alert("Per favore, inserisci un elemento valido.");
+  }
+});
